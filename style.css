@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif, Arial;
+    color: white;
+}
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bgimg img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 51%;
+    z-index: -9;
+}
+
+.left {
+    width: 18em;
+    height: 9em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 7px 6em 7px 8px;
+    padding-right: 6em;
+    background-color: hsl(228, 56%, 26%);
+
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 36em;
+    padding: 2em;
+    z-index: 0;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+}
+
+.a span {
+    color: gray;
+}
+
+.bottomdesc {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    font-weight: 900;
+}
+
+
+.databar {
+    padding: 3px;
+    border-radius: 1em;
+    background-color: hsl(229, 57%, 11%);
+
+}
+
+.databarcolor {
+    /* padding: 6px; */
+    border-radius: 1em;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 24em;
+}
+
+.databarcircle {
+    width: 1em;
+    padding: 9px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    left: 95%;
+    /* margin-right: 78em; */
+}
+
+
+.a {
+    background-color: white;
+    width: 9em;
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+
+.b {
+    clip-path: polygon(99% 15%, 2% 16%, 100% 100%);
+    background-color: white;
+    width: 6em;
+    padding: 1em;
+
+    position: relative;
+    bottom: 3em;
+    left: 3em;
+    z-index: -1;
+}
+
+.a .no {
+    color: black;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.pop {
+    width: 10em;
+    position: absolute;
+    top: 34%;
+    left: 64%;
+    border: transparent;
+    background: transparent;
+}
+
+
+.paratop span {
+    font-weight: bold;
+}
+
+@media(max-width:1015px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+    }
+
+    .left {
+        width: unset;
+    }
+
+
+
+    .right {
+        width: 31em;
+        padding: 2em;
+        z-index: 0;
+        background-color: hsl(228, 56%, 26%);
+        border-radius: 10px;
+    }
+
+    .databarcolor {
+        border-radius: 1em;
+        background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        width: 18em;
+    }
+
+}
+
+@media(max-width:907px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+    }
+
+    .left {
+        width: 14em;
+    }
+
+    .right {
+        width: 23em;
+        padding: 2em;
+        z-index: 0;
+        background-color: hsl(228, 56%, 26%);
+        border-radius: 10px;
+    }
+
+    .databarcolor {
+        width: 13em;
+    }
+
+    .pop {
+        width: 10em;
+        position: absolute;
+        top: 34%;
+        left: 62%;
+        border: transparent;
+        background: transparent;
+    }
+
+}
+
+@media(max-width:731px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .left,
+    .right {
+        width: 23em;
+    }
+
+    .pop{
+        top: 7em;
+    right: 50%;
+    left: 27%;
+    position: relative;
+}
+.b{
+    display: none;
+}
+}
+
+
+@media(max-width:381px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .left,
+    .right {
+        width: 20em;
+    }
+
+    .databar {
+        width: 96%;
+    }
+
+    .databarcolor {
+        width: 9em;
+    }
+}
+
+
+@media(max-width:330px){
+    .left{
+        width: 80%;
+    }
+
+    .right{
+        width: 80%;
+    }
+
+    .databarcolor {
+        width: 6em;
+    }
+}
+
+
+/* body {
+    color: hsl(243, 100%, 93%);
+    color: hsl(229, 7%, 55%);
+    color: hsl(228, 56%, 26%);
+    color: hsl(229, 57%, 11%);
+} */
